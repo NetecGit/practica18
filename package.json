@@ -1,0 +1,14 @@
+{
+  "name": "practica18",
+  "version": "1.0.0",
+  "description": "Práctica 18. Parte IV Cell's Básico",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Netec - Blanca Leticia Escamilla Islas",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  }
+}
