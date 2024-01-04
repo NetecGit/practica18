@@ -43,7 +43,7 @@ pipeline {
 
         stage('Lanzamiento') {
             steps {
-				echo "Lanzamiento..."
+				echo "Lanzamiento... con ip publica"
                 // Inicia la aplicación utilizando Polymer Serve.
                 sh 'polymer serve --open'
             }
