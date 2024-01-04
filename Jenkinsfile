@@ -10,14 +10,15 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+				echo "Checkout..."
                 // Obtén el código del repositorio.
-                checkout scm
+                //checkout scm
             }
         }
 
         stage('Instalación de dependencias') {
             steps {
-				echo "Instalación de dependencias"
+				echo "Instalación de dependencias..."
                 // Instala las dependencias de npm.
 				// sh 'npm install'
 				
@@ -26,13 +27,15 @@ pipeline {
 
         stage('Construcción') {
             steps {
-                // Construye el proyecto Polymer.
+				echo "Construye el proyecto LitElement"
+                //  
                 // sh 'npm run build'
             }
         }
 
         stage('Pruebas') {
             steps {
+				echo "Ejecución de pruebas..."
                 // Ejecuta las pruebas del proyecto.
                 //sh 'npm test'
             }
@@ -40,6 +43,7 @@ pipeline {
 
         stage('Lanzamiento') {
             steps {
+				echo "Lanzamiento..."
                 // Inicia la aplicación utilizando Polymer Serve.
                 sh 'polymer serve --open'
             }
