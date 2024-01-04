@@ -41,7 +41,7 @@ pipeline {
             steps {
 				echo "Lanzamiento... con ip publica"
                 // Inicia la aplicación utilizando Polymer Serve.
-                sh 'polymer serve --open'
+                //sh 'polymer serve --open'
             }
         }
     }
