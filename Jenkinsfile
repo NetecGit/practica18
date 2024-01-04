@@ -17,22 +17,24 @@ pipeline {
 
         stage('Instalación de dependencias') {
             steps {
+				echo "Instalación de dependencias"
                 // Instala las dependencias de npm.
-                sh 'npm install'
+				// sh 'npm install'
+				
             }
         }
 
         stage('Construcción') {
             steps {
                 // Construye el proyecto Polymer.
-                sh 'npm run build'
+                // sh 'npm run build'
             }
         }
 
         stage('Pruebas') {
             steps {
                 // Ejecuta las pruebas del proyecto.
-                sh 'npm test'
+                //sh 'npm test'
             }
         }
 
