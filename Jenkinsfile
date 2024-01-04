@@ -53,7 +53,8 @@ pipeline {
     post {
         always {
             // Limpia después de ejecutar el pipeline.
-            cleanWs()
+            // cleanWs()
+            echo 'siempre.'
         }
         success {
             echo 'El pipeline se ha ejecutado exitosamente.'
