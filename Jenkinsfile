@@ -16,7 +16,7 @@ pipeline {
             steps {
 				echo "Instalacion de dependencias..."
                 // Instala las dependencias de npm.
-                pwd
+                sh 'pwd; id'
 				sh 'npm install'
 				
             }
