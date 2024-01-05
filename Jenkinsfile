@@ -14,8 +14,9 @@ pipeline {
 
         stage('Instalación de dependencias') {
             steps {
-				echo "Instalación de dependencias..."
+				echo "Instalacion de dependencias..."
                 // Instala las dependencias de npm.
+                pwd
 				sh 'npm install'
 				
             }
@@ -31,7 +32,7 @@ pipeline {
 
         stage('Pruebas') {
             steps {
-				echo "Ejecución de pruebas..."
+				echo "Ejecucion de pruebas..."
                 // Ejecuta las pruebas del proyecto.
                 sh 'npm test'
             }
