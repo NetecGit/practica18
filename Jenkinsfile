@@ -8,7 +8,7 @@ pipeline {
             steps {
 				echo "Checkout..."
                 // Obtén el código del repositorio.
-                //checkout scm
+                checkout scm
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
             steps {
 				echo "Instalación de dependencias..."
                 // Instala las dependencias de npm.
-				// sh 'npm install'
+				sh 'npm install'
 				
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
 				echo "Construye el proyecto LitElement"
                 //  
-                // sh 'npm run build'
+                sh 'npm run build'
             }
         }
 
@@ -33,7 +33,7 @@ pipeline {
             steps {
 				echo "Ejecución de pruebas..."
                 // Ejecuta las pruebas del proyecto.
-                //sh 'npm test'
+                sh 'npm test'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
             steps {
 				echo "Lanzamiento... con ip publica"
                 // Inicia la aplicación utilizando Polymer Serve.
-                //sh 'polymer serve --open'
+                sh 'polymer serve --open'
             }
         }
     }
